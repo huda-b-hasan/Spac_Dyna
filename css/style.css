@@ -62,6 +62,7 @@ ul {
     justify-content: center;
     font-size: 27px;
     box-shadow: 0px 0px 10px -2px black;
+    z-index:100;
 }
 .to-top a i{
     color: white;
@@ -364,6 +365,7 @@ header .header .image img{
     gap: 25px;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     margin-top: 50px;
+    padding: 50px 0;
 }
 .protfolio .protfolio-section .box{
     position: relative;
@@ -372,29 +374,37 @@ header .header .image img{
     justify-content: center;
     background-color: white;
 }
-
-.protfolio .protfolio-section .box:hover .card::before{
-    border-color: var(--main-color) transparent transparent transparent;
-}
-.protfolio .protfolio-section .image{
+.protfolio .protfolio-section .move{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
     height: 200px;
-    box-shadow: 0px 0px 7px 0.5px rgb(223, 221, 221);
     width: 100%;
+    background-color: transparent;
+}
+.protfolio .protfolio-section .image{
+    border-radius: 25px;
+    position: absolute;
+    box-shadow: 0px 0px 7px 0.5px rgb(223, 221, 221);
     background-color: white;
-    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .protfolio .protfolio-section .box:hover .image{
-    transition: all 1s;
-    position: absolute;
-    z-index: 2;
-    top: 110px;
+    bottom: -135px;
+    transition: 1s;
 }
 .protfolio .protfolio-section .box img{
     width: 100px;
+}
+.protfolio .protfolio-section .box:hover .card::before{
+    border-color: var(--main-color) transparent transparent transparent;
 }
 .protfolio .protfolio-section .box .card{ 
     transition: 0.7s;
@@ -415,10 +425,9 @@ header .header .image img{
     z-index: -1;
 }
 .protfolio .protfolio-section .box:hover .card{
-    top: 20%;
+    top:20px;
     transition: 1s;
     z-index: 1;
-    transform: translate(0,-50%);
 }
 .protfolio .protfolio-section .box .card::before{
     content: "";
