@@ -15,7 +15,9 @@ span.red{
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: hidden;
+}
 :root {
     --main-color: rgb(254, 63, 64);
     --secound-color: rgb(3, 164, 237);
@@ -55,7 +57,7 @@ ul {
     height: 50px;
     border-radius: 50%;
     position: fixed;
-    right: 18px;
+    right: 25px;
     bottom: 25px;
     display: flex;
     align-items: center;
