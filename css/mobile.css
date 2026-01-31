@@ -63,6 +63,7 @@
     }
     header .header .title,header .header .image{
         width: 95%;
+        padding-top: 50px;
     }
     header .header .title h1{
         width: 100%;
