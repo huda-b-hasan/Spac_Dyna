@@ -4,10 +4,6 @@
     }
 
     /* NAV  */
-    nav .navigation ul {
-        display: none;
-    }
-
     nav .navigation button {
         display: none;
     }
@@ -24,7 +20,7 @@
     }
 
     nav .menu-bar span:last-child,
-    header nav .menu-bar span:first-child {
+    nav .menu-bar span:first-child {
         width: 20px;
     }
 
@@ -34,12 +30,12 @@
 
     nav .open span {
         background-color: var(--main-color);
-
     }
 
     nav .navigation {
         display: block;
         position: absolute;
+        z-index: -1;
         top: -400px;
         transition: 0.8s;
         left: 50%;
@@ -68,7 +64,7 @@
         border-bottom: 1px solid rgb(224, 223, 223);
     }
 
-    /*// NAV // */
+    /* // NAV // */
     /* HEADER  */
     header .header {
         flex-direction: column;
@@ -134,7 +130,7 @@
     }
 
     /*// SERVICES // */
-        /* PROTFOLIO  */
+    /* PROTFOLIO  */
     .protfolio h3 {
         width: 100%
     }
@@ -149,12 +145,15 @@
     .blog h3 {
         width: 100%;
     }
-    .blog .blog-section .card{
+
+    .blog .blog-section .card {
         flex-direction: column;
     }
-    .blog .blog-section .card img{
+
+    .blog .blog-section .card img {
         width: 100%;
     }
+
     /*// BLOG // */
     /* MESSAGE US  */
     .message-us .message-us-section {
