@@ -149,7 +149,12 @@
     .blog h3 {
         width: 100%;
     }
-
+    .blog .blog-section .card{
+        flex-direction: column;
+    }
+    .blog .blog-section .card img{
+        width: 100%;
+    }
     /*// BLOG // */
     /* MESSAGE US  */
     .message-us .message-us-section {
